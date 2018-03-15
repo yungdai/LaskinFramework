@@ -48,7 +48,7 @@ extension String {
         }
     }
     
-    static func getMonthAsString(_ monthAsInt: Int) -> String? {
+    public static func getMonthAsString(_ monthAsInt: Int) -> String? {
         
         guard let month = Month(rawValue: monthAsInt) else { return nil }
         
@@ -80,7 +80,7 @@ extension String {
         }
     }
     
-    static func deviceOrientation() -> String? {
+    public static func deviceOrientation() -> String? {
         
         let device = UIDevice.current
         if device.isGeneratingDeviceOrientationNotifications {
@@ -105,7 +105,7 @@ extension String {
         return nil
     }
     
-    static func getStringValueFromPlist(plistName: String, valueForKey: String) -> String! {
+    public static func getStringValueFromPlist(plistName: String, valueForKey: String) -> String! {
         
         var plistFormat = PropertyListSerialization.PropertyListFormat.xml
         var plistData: [String: AnyObject] = [:]
@@ -121,17 +121,17 @@ extension String {
         return plistData[valueForKey]?.value as String!
     }
     
-    func splitCamelCase() -> String {
+    public func splitCamelCase() -> String {
         return unicodeScalars.flatMap { CharacterSet.uppercaseLetters.contains($0) ? " \($0)" : String($0) }.joined()
     }
     
-    func initials() -> String {
+    public func initials() -> String {
         guard !self.isEmpty else { return "" }
         return components(separatedBy: " ").map({ String($0.first!) })
                 .filter({ CharacterSet.letters.contains($0.unicodeScalars.first!) }).joined(separator: "")
     }
 
-    subscript (range: Range<Int>) -> String {
+    public subscript (range: Range<Int>) -> String {
         let start = index(startIndex, offsetBy: range.lowerBound)
         let end = index(startIndex, offsetBy: range.upperBound)
         return String(self[start..<end])

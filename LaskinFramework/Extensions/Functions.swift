@@ -8,7 +8,7 @@
 
 import Foundation
 
-func unwrap(any: Any) -> Any? {
+public func unwrap(any: Any) -> Any? {
     
     let mirror = Mirror(reflecting: any)
     if mirror.displayStyle != .optional {

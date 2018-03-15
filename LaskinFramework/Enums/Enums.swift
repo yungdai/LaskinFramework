@@ -9,21 +9,25 @@
 import Foundation
 
 public enum UserType: String, StringRepresentableEnum, Codable {
-        case none
-        case administrator
-        case coach
-        case contactPerson
-        case judge
-        case mooter
-        case researcher
+    case none
+    case administrator
+    case coach
+    case contactPerson
+    case judge
+    case mooter
+    case researcher
+    
+    public init() {
+        self = .none
+    }
 }
 
 public enum AppPrivileges: String, StringRepresentableEnum, Codable {
     case admin
     case user
     case none
-
-    init() {
+    
+    public init() {
         self = .none
     }
 }
@@ -44,7 +48,7 @@ public enum JudgeExperience: String, StringRepresentableEnum, Codable {
     case veteran
     case notAJudge = "N/A"
     
-    init() {
+    public init() {
         self = .notAJudge
     }
 }
@@ -54,11 +58,11 @@ public enum Gender: String, StringRepresentableEnum, Codable {
     case female
     case notApplicable
     
-    init() {
+    public init() {
         self = .notApplicable
     }
-
-    var initial: String {
+    
+    public var initial: String {
         return String(rawValue.first!).uppercased()
     }
 }
@@ -68,11 +72,11 @@ public enum Language: String, StringRepresentableEnum, Codable {
     case french
     case none
     
-    init() {
+    public init() {
         self = .english
     }
     
-    init?(string: String) {
+    public init?(string: String) {
         let lowercased = string.lowercased()
         if lowercased == "english" || lowercased == "e" {
             self = .english
@@ -85,16 +89,16 @@ public enum Language: String, StringRepresentableEnum, Codable {
         }
     }
     
-    var initial: String {
+    public var initial: String {
         return isValidLanguage ? String(rawValue.first!).uppercased() : "-"
     }
     
-    var isValidLanguage: Bool {
+    public var isValidLanguage: Bool {
         return self != .none
     }
 }
 
-public enum TimeZone: Int, Codable {
+public enum LSATimeZone: Int, Codable {
     case pacific = 0
     case mountain = 1
     case central = 2
@@ -119,11 +123,11 @@ public enum Province: String, StringRepresentableEnum, Codable {
     case northwestTerritories = "Northwest Territories"
     case nunavut = "Nunavut"
     
-    var initials: String {
+    public var initials: String {
         return rawValue.initials()
     }
     
-    var timeZone: TimeZone {
+    public var timeZone: LSATimeZone {
         switch self {
         case .britishColumbia, .yukon:
             return .pacific
@@ -169,11 +173,11 @@ public enum Side: String, StringRepresentableEnum, Codable {
     case appellant
     case respondent
     
-    var initial: String {
+    public var initial: String {
         return String(rawValue.first!).uppercased()
     }
     
-    init?(string: String) {
+    public init?(string: String) {
         let lowercased = string.lowercased()
         if lowercased == "appellant" || lowercased == "a" {
             self = .appellant
