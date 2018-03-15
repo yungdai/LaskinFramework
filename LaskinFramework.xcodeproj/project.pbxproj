@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F456C7D205A105A00923D8C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7A205A105900923D8C /* StringExtensions.swift */; };
+		9F456C7E205A105A00923D8C /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7B205A105900923D8C /* Pipe.swift */; };
+		9F456C7F205A105A00923D8C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7C205A105A00923D8C /* Functions.swift */; };
+		9F456C81205A109400923D8C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C80205A109400923D8C /* Enums.swift */; };
+		9F456C87205A112800923D8C /* StringRepresentableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C84205A112800923D8C /* StringRepresentableEnum.swift */; };
+		9F456C88205A112800923D8C /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C85205A112800923D8C /* Nameable.swift */; };
+		9F456C89205A112800923D8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C86205A112800923D8C /* User.swift */; };
 		9F840B6B205A0C080035D8AD /* LaskinFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F840B61205A0C080035D8AD /* LaskinFramework.framework */; };
 		9F840B70205A0C080035D8AD /* LaskinFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F840B6F205A0C080035D8AD /* LaskinFrameworkTests.swift */; };
 		9F840B72205A0C080035D8AD /* LaskinFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F840B64205A0C080035D8AD /* LaskinFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F456C7A205A105900923D8C /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		9F456C7B205A105900923D8C /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		9F456C7C205A105A00923D8C /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		9F456C80205A109400923D8C /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		9F456C84205A112800923D8C /* StringRepresentableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRepresentableEnum.swift; sourceTree = "<group>"; };
+		9F456C85205A112800923D8C /* Nameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
+		9F456C86205A112800923D8C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9F840B61205A0C080035D8AD /* LaskinFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaskinFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F840B64205A0C080035D8AD /* LaskinFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaskinFramework.h; sourceTree = "<group>"; };
 		9F840B65205A0C080035D8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +64,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F456C79205A104100923D8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F456C7A205A105900923D8C /* StringExtensions.swift */,
+				9F456C7C205A105A00923D8C /* Functions.swift */,
+				9F456C7B205A105900923D8C /* Pipe.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9F456C82205A109700923D8C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				9F456C80205A109400923D8C /* Enums.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9F456C83205A112800923D8C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9F456C84205A112800923D8C /* StringRepresentableEnum.swift */,
+				9F456C85205A112800923D8C /* Nameable.swift */,
+				9F456C86205A112800923D8C /* User.swift */,
+			);
+			name = Protocols;
+			path = ../../LaskinMobileApp/LaskinMobileApp/Models/Protocols;
+			sourceTree = "<group>";
+		};
 		9F840B57205A0C080035D8AD = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +114,9 @@
 		9F840B63205A0C080035D8AD /* LaskinFramework */ = {
 			isa = PBXGroup;
 			children = (
+				9F456C83205A112800923D8C /* Protocols */,
+				9F456C82205A109700923D8C /* Enums */,
+				9F456C79205A104100923D8C /* Extensions */,
 				9F840B7B205A0C280035D8AD /* Models */,
 				9F840B64205A0C080035D8AD /* LaskinFramework.h */,
 				9F840B65205A0C080035D8AD /* Info.plist */,
@@ -204,6 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F456C7D205A105A00923D8C /* StringExtensions.swift in Sources */,
+				9F456C7E205A105A00923D8C /* Pipe.swift in Sources */,
+				9F456C87205A112800923D8C /* StringRepresentableEnum.swift in Sources */,
+				9F456C81205A109400923D8C /* Enums.swift in Sources */,
+				9F456C88205A112800923D8C /* Nameable.swift in Sources */,
+				9F456C7F205A105A00923D8C /* Functions.swift in Sources */,
+				9F456C89205A112800923D8C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +437,7 @@
 		9F840B79205A0C080035D8AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W9YJQYCY2W;
 				INFOPLIST_FILE = LaskinFrameworkTests/Info.plist;
@@ -398,6 +452,7 @@
 		9F840B7A205A0C080035D8AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W9YJQYCY2W;
 				INFOPLIST_FILE = LaskinFrameworkTests/Info.plist;
