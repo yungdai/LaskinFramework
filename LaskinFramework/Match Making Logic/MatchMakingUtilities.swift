@@ -113,7 +113,7 @@ public struct MatchMakingUtilities {
         let firstDayRooms = Rooms(keys: [Int](1...roomCount), repeatedValue: firstDaySessions)
         let secondDaySessions = Sessions(keys: [Int](1...sessionsPerDay.second), repeatedValue: nil)
         let secondDayRooms = Rooms(keys: [Int](1...roomCount), repeatedValue: secondDaySessions)
-        var schedule = Schedule(schedule: [1: firstDayRooms, 2: secondDayRooms])
+        let schedule = Schedule(schedule: [1: firstDayRooms, 2: secondDayRooms])
         
         //Block number of empty cells
 //        if emptyRoomCount > 0 {
