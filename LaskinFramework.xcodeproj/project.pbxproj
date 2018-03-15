@@ -71,6 +71,7 @@
 		9F840B63205A0C080035D8AD /* LaskinFramework */ = {
 			isa = PBXGroup;
 			children = (
+				9F840B7B205A0C280035D8AD /* Models */,
 				9F840B64205A0C080035D8AD /* LaskinFramework.h */,
 				9F840B65205A0C080035D8AD /* Info.plist */,
 			);
@@ -84,6 +85,13 @@
 				9F840B71205A0C080035D8AD /* Info.plist */,
 			);
 			path = LaskinFrameworkTests;
+			sourceTree = "<group>";
+		};
+		9F840B7B205A0C280035D8AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
