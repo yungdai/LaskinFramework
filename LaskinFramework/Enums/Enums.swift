@@ -146,6 +146,7 @@ public enum Province: String, StringRepresentableEnum, Codable {
 }
 
 public enum SchoolName: String, StringRepresentableEnum, Codable {
+	
     case alberta = "Alberta"
     case dalhousie = "Dalhousie"
     case laval = "Laval"

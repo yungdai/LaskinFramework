@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+// TODO: rethink using CoreData, might use CloudKit instead
 public class CoreDataStack {
     
     private let modelName: String

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16282560A756133F3FB81D43 /* Pods_LaskinFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067272662CC9F51062F64636 /* Pods_LaskinFramework.framework */; };
+		33D5F39CC31ABCB3BB56EC76 /* Pods_LaskinFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1891765606A49A7A35E1C2C5 /* Pods_LaskinFrameworkTests.framework */; };
 		9F456C7D205A105A00923D8C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7A205A105900923D8C /* StringExtensions.swift */; };
 		9F456C7E205A105A00923D8C /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7B205A105900923D8C /* Pipe.swift */; };
 		9F456C7F205A105A00923D8C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7C205A105A00923D8C /* Functions.swift */; };
@@ -43,6 +45,8 @@
 		9F8A3DC8205AD15100F9C97C /* ScheduleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A3DC7205AD15100F9C97C /* ScheduleStore.swift */; };
 		9F8A3DCB205AD16C00F9C97C /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A3DCA205AD16C00F9C97C /* UserStore.swift */; };
 		9F8A3DCD205AD17A00F9C97C /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A3DCC205AD17A00F9C97C /* HTTPManager.swift */; };
+		9FCBCFB62117AEAB00F8BE12 /* LaskinDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBCFB52117AEAB00F8BE12 /* LaskinDataManager.swift */; };
+		9FCBCFB82117AED800F8BE12 /* LaskinDataManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBCFB72117AED800F8BE12 /* LaskinDataManagerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		067272662CC9F51062F64636 /* Pods_LaskinFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaskinFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12663B75057038E1F9AE65C4 /* Pods-LaskinFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaskinFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaskinFramework/Pods-LaskinFramework.release.xcconfig"; sourceTree = "<group>"; };
+		1891765606A49A7A35E1C2C5 /* Pods_LaskinFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaskinFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F456C7A205A105900923D8C /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		9F456C7B205A105900923D8C /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		9F456C7C205A105A00923D8C /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -95,6 +102,11 @@
 		9F8A3DC7205AD15100F9C97C /* ScheduleStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleStore.swift; sourceTree = "<group>"; };
 		9F8A3DCA205AD16C00F9C97C /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		9F8A3DCC205AD17A00F9C97C /* HTTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		9FCBCFB52117AEAB00F8BE12 /* LaskinDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaskinDataManager.swift; sourceTree = "<group>"; };
+		9FCBCFB72117AED800F8BE12 /* LaskinDataManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaskinDataManagerSpec.swift; sourceTree = "<group>"; };
+		B060ACC13B73F51DA265AC2A /* Pods-LaskinFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaskinFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaskinFrameworkTests/Pods-LaskinFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		D96A196A517C14ECE536D36D /* Pods-LaskinFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaskinFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaskinFramework/Pods-LaskinFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		FA44E8F6CA08C6B93EDA6D86 /* Pods-LaskinFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaskinFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaskinFrameworkTests/Pods-LaskinFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16282560A756133F3FB81D43 /* Pods_LaskinFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +123,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F840B6B205A0C080035D8AD /* LaskinFramework.framework in Frameworks */,
+				33D5F39CC31ABCB3BB56EC76 /* Pods_LaskinFrameworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51E7083F69C9895B6714E5C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96A196A517C14ECE536D36D /* Pods-LaskinFramework.debug.xcconfig */,
+				12663B75057038E1F9AE65C4 /* Pods-LaskinFramework.release.xcconfig */,
+				FA44E8F6CA08C6B93EDA6D86 /* Pods-LaskinFrameworkTests.debug.xcconfig */,
+				B060ACC13B73F51DA265AC2A /* Pods-LaskinFrameworkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9F456C79205A104100923D8C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +165,8 @@
 				9F840B63205A0C080035D8AD /* LaskinFramework */,
 				9F840B6E205A0C080035D8AD /* LaskinFrameworkTests */,
 				9F840B62205A0C080035D8AD /* Products */,
+				51E7083F69C9895B6714E5C0 /* Pods */,
+				BC75041B07FAC12CD730C5F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +204,7 @@
 			children = (
 				9F840B6F205A0C080035D8AD /* LaskinFrameworkTests.swift */,
 				9F840B71205A0C080035D8AD /* Info.plist */,
+				9FCBCFB72117AED800F8BE12 /* LaskinDataManagerSpec.swift */,
 			);
 			path = LaskinFrameworkTests;
 			sourceTree = "<group>";
@@ -261,8 +289,18 @@
 			isa = PBXGroup;
 			children = (
 				9F8A3DCC205AD17A00F9C97C /* HTTPManager.swift */,
+				9FCBCFB52117AEAB00F8BE12 /* LaskinDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		BC75041B07FAC12CD730C5F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				067272662CC9F51062F64636 /* Pods_LaskinFramework.framework */,
+				1891765606A49A7A35E1C2C5 /* Pods_LaskinFrameworkTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F840B75205A0C080035D8AD /* Build configuration list for PBXNativeTarget "LaskinFramework" */;
 			buildPhases = (
+				E3DC129A46CD8A017948EA96 /* [CP] Check Pods Manifest.lock */,
 				9F840B5C205A0C080035D8AD /* Sources */,
 				9F840B5D205A0C080035D8AD /* Frameworks */,
 				9F840B5E205A0C080035D8AD /* Headers */,
@@ -301,9 +340,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F840B78205A0C080035D8AD /* Build configuration list for PBXNativeTarget "LaskinFrameworkTests" */;
 			buildPhases = (
+				318B637C3188E975E3BCA82C /* [CP] Check Pods Manifest.lock */,
 				9F840B66205A0C080035D8AD /* Sources */,
 				9F840B67205A0C080035D8AD /* Frameworks */,
 				9F840B68205A0C080035D8AD /* Resources */,
+				C0628AEF9FB01E5585177FE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,15 +363,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Yung Dai";
 				TargetAttributes = {
 					9F840B60205A0C080035D8AD = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					9F840B69205A0C080035D8AD = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -372,6 +415,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		318B637C3188E975E3BCA82C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaskinFrameworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0628AEF9FB01E5585177FE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaskinFrameworkTests/Pods-LaskinFrameworkTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaskinFrameworkTests/Pods-LaskinFrameworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3DC129A46CD8A017948EA96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaskinFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F840B5C205A0C080035D8AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -386,6 +488,7 @@
 				9F8A3DCB205AD16C00F9C97C /* UserStore.swift in Sources */,
 				9F8A3DBC205AC03F00F9C97C /* Schedule.swift in Sources */,
 				9F456C7E205A105A00923D8C /* Pipe.swift in Sources */,
+				9FCBCFB62117AEAB00F8BE12 /* LaskinDataManager.swift in Sources */,
 				9F8A3D91205AB8F000F9C97C /* StringRepresentableEnum.swift in Sources */,
 				9F8A3DCD205AD17A00F9C97C /* HTTPManager.swift in Sources */,
 				9F456C81205A109400923D8C /* Enums.swift in Sources */,
@@ -415,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCBCFB82117AED800F8BE12 /* LaskinDataManagerSpec.swift in Sources */,
 				9F840B70205A0C080035D8AD /* LaskinFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +548,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -451,6 +556,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -504,6 +610,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -511,6 +618,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -545,6 +653,7 @@
 		};
 		9F840B76205A0C080035D8AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96A196A517C14ECE536D36D /* Pods-LaskinFramework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -559,13 +668,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.LaskinFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9F840B77205A0C080035D8AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12663B75057038E1F9AE65C4 /* Pods-LaskinFramework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -580,13 +690,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.LaskinFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		9F840B79205A0C080035D8AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA44E8F6CA08C6B93EDA6D86 /* Pods-LaskinFrameworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,13 +706,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.LaskinFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9F840B7A205A0C080035D8AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B060ACC13B73F51DA265AC2A /* Pods-LaskinFrameworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -610,7 +722,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.LaskinFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

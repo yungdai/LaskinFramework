@@ -37,7 +37,7 @@ public struct MatchMakingUtilities {
     /// Converts [Mooter] to [AMooter].
     public static func convertMooters(_ mooters: [Mooter], sorted: Bool) -> [LMMooter] {
         
-        let converted = mooters.flatMap { LMMooter(mooter: $0) }
+        let converted = mooters.compactMap { LMMooter(mooter: $0) }
         return sorted ? sortMooters(converted) : converted
     }
     
@@ -82,7 +82,7 @@ public struct MatchMakingUtilities {
      - Note: This function assumes the mooters have already been sorted using the sortMooters(_:) function.
      */
     public static func createPairs(from mooters: [LMMooter], hostTimeZone: Int) -> [Pair] {
-        return stride(from: 0, to: mooters.count, by: 2).flatMap {
+        return stride(from: 0, to: mooters.count, by: 2).compactMap {
             
             // creates pairs of mooters and relays the time difference from the host timezone
             // TODO: perhaps change [$0 + 1] to [$1]

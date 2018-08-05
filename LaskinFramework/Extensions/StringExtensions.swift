@@ -105,7 +105,7 @@ extension String {
         return nil
     }
     
-    public static func getStringValueFromPlist(plistName: String, valueForKey: String) -> String! {
+    public static func getStringValueFromPlist(plistName: String, valueForKey: String) -> String {
         
         var plistFormat = PropertyListSerialization.PropertyListFormat.xml
         var plistData: [String: AnyObject] = [:]
@@ -117,12 +117,14 @@ extension String {
         } catch {
             print("Error in plist")
         }
-        
-        return plistData[valueForKey]?.value as String!
+
+		guard let plistDataString = plistData[valueForKey] as? String else { return "Error in plist" }
+		
+        return plistDataString
     }
     
     public func splitCamelCase() -> String {
-        return unicodeScalars.flatMap { CharacterSet.uppercaseLetters.contains($0) ? " \($0)" : String($0) }.joined()
+        return unicodeScalars.compactMap { CharacterSet.uppercaseLetters.contains($0) ? " \($0)" : String($0) }.joined()
     }
     
     public func initials() -> String {

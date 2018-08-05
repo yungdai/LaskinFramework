@@ -9,7 +9,6 @@
 import Foundation
 
 public struct Judge: User, UserInfo, School, MatchMaking, Codable {
-    
 
     public var id: Int? = 999
     public var firstName: String?

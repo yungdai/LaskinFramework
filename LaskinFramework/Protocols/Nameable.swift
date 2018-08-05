@@ -17,11 +17,11 @@ public protocol Nameable {
 
 public extension Nameable {
      func propertyNames() -> [String] {
-        return Mirror(reflecting: self).children.flatMap { $0.label }
+        return Mirror(reflecting: self).children.compactMap { $0.label }
     }
     
      func properties() -> [Any] {
-        return Mirror(reflecting: self).children.flatMap { $0.value }
+        return Mirror(reflecting: self).children.compactMap { $0.value }
     }
     
      func propertiesDictionary() -> [String: Any] {

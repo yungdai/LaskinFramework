@@ -82,6 +82,6 @@ public struct Schedule: Codable {
     If order is an issue do not use this method.
     */
     public func matches(onDay day: Int, duringSession session: Int) -> [Match] {
-        return rooms(onDay: day).values.flatMap { $0[session] ?? nil }
+        return rooms(onDay: day).values.compactMap { $0[session] ?? nil }
     }
 }

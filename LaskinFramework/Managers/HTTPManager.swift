@@ -41,14 +41,6 @@ public class HTTPManager: NSObject {
     
     public var jsonData: Payload?
     public var isLoggedIntoWordPress: Bool = false
-//
-//        {
-//        didSet{
-//            if isLoggedIntoWordPress {
-//
-//            }
-//        }
-//    }
     public var gotFormidableData: Bool = false {
         didSet {
             

@@ -18,7 +18,7 @@ extension Dictionary {
     
     func getAllValuesFromDictionary() -> Array<Any> {
         
-        return self.values.flatMap { $0 }
+        return self.values.compactMap { $0 }
     }
     
     func countAllObjects() -> Int {
