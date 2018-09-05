@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public struct Administrator: User, UserInfo, Codable  {
     
     public var id: Int? = 999

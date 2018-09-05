@@ -22,6 +22,29 @@ public enum UserType: String, StringRepresentableEnum, Codable {
     }
 }
 
+extension UserType: Equatable {
+	
+	static public func ==(lhs: UserType, rhs: UserType) -> Bool {
+	
+		switch(lhs, rhs) {
+		case (.none, .none):
+			return true
+		case (.administrator, .administrator):
+			return true
+		case (.coach, .coach):
+			return true
+		case (.judge, .judge):
+			return true
+		case (.mooter, .mooter):
+			return true
+		case (.researcher, .researcher):
+			return true
+		default:
+			return false
+		}
+	}
+}
+
 public enum AppPrivileges: String, StringRepresentableEnum, Codable {
     case admin
     case user
@@ -32,9 +55,46 @@ public enum AppPrivileges: String, StringRepresentableEnum, Codable {
     }
 }
 
+extension AppPrivileges: Equatable {
+	
+	static public func ==(lhs: AppPrivileges, rhs: AppPrivileges) -> Bool {
+		
+		switch (lhs, rhs) {
+		case (.admin, .admin):
+			return true
+		case (.user, .user):
+			return true
+		case (.none, .none):
+			return true
+		default:
+			return (lhs == rhs) ? true : false
+		}
+	}
+}
+
 public enum Day: Int, Codable {
     case sunday = 1, monday = 2, tuesday = 3, wednesday = 4,
     thursday = 5, friday = 6, saturday = 7
+}
+
+extension Day: Equatable {
+	
+	static public func ==(lhs: Day, rhs: Day) -> Bool {
+		switch (lhs, rhs) {
+		case (.sunday, .sunday):
+			return true
+		case (.monday, .monday):
+			return true
+		case (.tuesday, .tuesday):
+			return true
+		case (.wednesday, .wednesday):
+			return true
+		case (.thursday, .thursday):
+			return true
+		default:
+			return (lhs == rhs) ? true : false
+		}
+	}
 }
 
 public enum Month: Int, Codable {

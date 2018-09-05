@@ -24,6 +24,8 @@ public typealias SessionsData = (session: Sessions, availableSessions: [Int])
 public typealias Rooms = [Int: Sessions]
 /// The key is the day and the value is the rooms on that day
 public typealias ScheduleDictionary = [Int: Rooms]
+
+/// Users Data Object containing all users
 public typealias Users = [UserType: [User]]
 
 public struct K: Codable {

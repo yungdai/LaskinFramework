@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		16282560A756133F3FB81D43 /* Pods_LaskinFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067272662CC9F51062F64636 /* Pods_LaskinFramework.framework */; };
 		33D5F39CC31ABCB3BB56EC76 /* Pods_LaskinFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1891765606A49A7A35E1C2C5 /* Pods_LaskinFrameworkTests.framework */; };
+		9F26619321402D05004800E1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F26619221402D05004800E1 /* UserModel.swift */; };
+		9F26619521405E73004800E1 /* DefaultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F26619421405E73004800E1 /* DefaultData.swift */; };
 		9F456C7D205A105A00923D8C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7A205A105900923D8C /* StringExtensions.swift */; };
 		9F456C7E205A105A00923D8C /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7B205A105900923D8C /* Pipe.swift */; };
 		9F456C7F205A105A00923D8C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C7C205A105A00923D8C /* Functions.swift */; };
 		9F456C81205A109400923D8C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F456C80205A109400923D8C /* Enums.swift */; };
 		9F840B6B205A0C080035D8AD /* LaskinFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F840B61205A0C080035D8AD /* LaskinFramework.framework */; };
-		9F840B70205A0C080035D8AD /* LaskinFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F840B6F205A0C080035D8AD /* LaskinFrameworkTests.swift */; };
 		9F840B72205A0C080035D8AD /* LaskinFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F840B64205A0C080035D8AD /* LaskinFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F8A3D90205AB8F000F9C97C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A3D8D205AB8EF00F9C97C /* User.swift */; };
 		9F8A3D91205AB8F000F9C97C /* StringRepresentableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A3D8E205AB8F000F9C97C /* StringRepresentableEnum.swift */; };
@@ -45,6 +46,7 @@
 		9F8A3DC8205AD15100F9C97C /* ScheduleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A3DC7205AD15100F9C97C /* ScheduleStore.swift */; };
 		9F8A3DCB205AD16C00F9C97C /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A3DCA205AD16C00F9C97C /* UserStore.swift */; };
 		9F8A3DCD205AD17A00F9C97C /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8A3DCC205AD17A00F9C97C /* HTTPManager.swift */; };
+		9FB9BFE22119166100D4AEEA /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB9BFE12119166100D4AEEA /* UserManager.swift */; };
 		9FCBCFB62117AEAB00F8BE12 /* LaskinDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBCFB52117AEAB00F8BE12 /* LaskinDataManager.swift */; };
 		9FCBCFB82117AED800F8BE12 /* LaskinDataManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBCFB72117AED800F8BE12 /* LaskinDataManagerSpec.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		067272662CC9F51062F64636 /* Pods_LaskinFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaskinFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12663B75057038E1F9AE65C4 /* Pods-LaskinFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaskinFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaskinFramework/Pods-LaskinFramework.release.xcconfig"; sourceTree = "<group>"; };
 		1891765606A49A7A35E1C2C5 /* Pods_LaskinFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaskinFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F26619221402D05004800E1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9F26619421405E73004800E1 /* DefaultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultData.swift; sourceTree = "<group>"; };
 		9F456C7A205A105900923D8C /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		9F456C7B205A105900923D8C /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
 		9F456C7C205A105A00923D8C /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
@@ -71,7 +75,6 @@
 		9F840B64205A0C080035D8AD /* LaskinFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaskinFramework.h; sourceTree = "<group>"; };
 		9F840B65205A0C080035D8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F840B6A205A0C080035D8AD /* LaskinFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaskinFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F840B6F205A0C080035D8AD /* LaskinFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaskinFrameworkTests.swift; sourceTree = "<group>"; };
 		9F840B71205A0C080035D8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F8A3D8D205AB8EF00F9C97C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9F8A3D8E205AB8F000F9C97C /* StringRepresentableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRepresentableEnum.swift; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 		9F8A3DC7205AD15100F9C97C /* ScheduleStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleStore.swift; sourceTree = "<group>"; };
 		9F8A3DCA205AD16C00F9C97C /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		9F8A3DCC205AD17A00F9C97C /* HTTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		9FB9BFE12119166100D4AEEA /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		9FCBCFB52117AEAB00F8BE12 /* LaskinDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaskinDataManager.swift; sourceTree = "<group>"; };
 		9FCBCFB72117AED800F8BE12 /* LaskinDataManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaskinDataManagerSpec.swift; sourceTree = "<group>"; };
 		B060ACC13B73F51DA265AC2A /* Pods-LaskinFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaskinFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaskinFrameworkTests/Pods-LaskinFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,9 +206,8 @@
 		9F840B6E205A0C080035D8AD /* LaskinFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F840B6F205A0C080035D8AD /* LaskinFrameworkTests.swift */,
-				9F840B71205A0C080035D8AD /* Info.plist */,
 				9FCBCFB72117AED800F8BE12 /* LaskinDataManagerSpec.swift */,
+				9F840B71205A0C080035D8AD /* Info.plist */,
 			);
 			path = LaskinFrameworkTests;
 			sourceTree = "<group>";
@@ -215,6 +218,8 @@
 				9F8A3DB6205AC03E00F9C97C /* DictionaryExtensions.swift */,
 				9F8A3DB5205AC03E00F9C97C /* Errors.swift */,
 				9F8A3DB8205AC03E00F9C97C /* Schedule.swift */,
+				9F26619221402D05004800E1 /* UserModel.swift */,
+				9F26619421405E73004800E1 /* DefaultData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 		9F8A3DD0205AD19A00F9C97C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				9FB9BFE12119166100D4AEEA /* UserManager.swift */,
 				9F8A3DCC205AD17A00F9C97C /* HTTPManager.swift */,
 				9FCBCFB52117AEAB00F8BE12 /* LaskinDataManager.swift */,
 			);
@@ -487,7 +493,10 @@
 				9F8A3DAD205ABED200F9C97C /* MatchesData.swift in Sources */,
 				9F8A3DCB205AD16C00F9C97C /* UserStore.swift in Sources */,
 				9F8A3DBC205AC03F00F9C97C /* Schedule.swift in Sources */,
+				9F26619321402D05004800E1 /* UserModel.swift in Sources */,
 				9F456C7E205A105A00923D8C /* Pipe.swift in Sources */,
+				9F26619521405E73004800E1 /* DefaultData.swift in Sources */,
+				9FB9BFE22119166100D4AEEA /* UserManager.swift in Sources */,
 				9FCBCFB62117AEAB00F8BE12 /* LaskinDataManager.swift in Sources */,
 				9F8A3D91205AB8F000F9C97C /* StringRepresentableEnum.swift in Sources */,
 				9F8A3DCD205AD17A00F9C97C /* HTTPManager.swift in Sources */,
@@ -519,7 +528,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCBCFB82117AED800F8BE12 /* LaskinDataManagerSpec.swift in Sources */,
-				9F840B70205A0C080035D8AD /* LaskinFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +599,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -645,6 +654,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

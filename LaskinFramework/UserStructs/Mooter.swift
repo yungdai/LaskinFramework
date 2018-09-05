@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public struct Mooter: User, UserInfo, School, AccessibilityRequirements, DietaryNeeds, MatchMaking, Codable  {
 
     public var id: Int? = 999

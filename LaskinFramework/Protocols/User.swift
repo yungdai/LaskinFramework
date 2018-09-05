@@ -22,6 +22,12 @@ public extension User {
     var fullName: String {
         return "\(firstName ?? "") \(lastName ?? "")"
     }
+
+	/// return a codable model for encode and decoding the user protocol
+	public func returnUserModel() -> UserModel {
+		
+		return UserModel(user: self)
+	}
 }
 
 public protocol UserInfo: Codable {

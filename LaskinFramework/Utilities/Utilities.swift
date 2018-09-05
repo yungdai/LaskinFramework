@@ -16,12 +16,18 @@ public class Utilities: NSObject {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: completion)
     }
-    
+	
+	// TODO: Untested Will need to write a test for this
     public class func getUsersFromDefaults() -> Users? {
-        
+
         if let unarchivedUserData = defaults.object(forKey: "Users") as? Data {
-            
-            return (NSKeyedUnarchiver.unarchiveObject(with: unarchivedUserData) as? Users)
+
+			do {
+				guard let defaultData: DefaultData = try NSKeyedUnarchiver.unarchivedObject(ofClasses: [DefaultData.self], from: unarchivedUserData) as? DefaultData else { return nil }
+				return defaultData.users
+			} catch {
+				print(error)
+			}
         }
         
         return nil
@@ -29,10 +35,15 @@ public class Utilities: NSObject {
 
     public class func saveUsersToDefaults(users: Users?) {
         
-        guard let userArray = users as Users? else  { return print("error in trying to save object") }
-        
-        let archivedUserData = NSKeyedArchiver.archivedData(withRootObject: userArray)
-        defaults.set(archivedUserData, forKey: "Users")
-        
+        guard let users = users as Users? else  { return print("error in trying to save object") }
+		let defaultUserData = DefaultData(users: users)
+
+		do {
+			let archivedUserData = try NSKeyedArchiver.archivedData(withRootObject: defaultUserData, requiringSecureCoding: false)
+			defaults.set(archivedUserData, forKey: "Users")
+		} catch {
+			print(error)
+		}
+
     }
 }

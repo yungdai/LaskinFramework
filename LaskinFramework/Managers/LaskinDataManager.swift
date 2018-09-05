@@ -8,7 +8,18 @@
 
 import Foundation
 
-struct LaskinDataManager {
+public struct LaskinDataManager {
 	
+	var users: Users?
+	var schedule: Schedule?
+	var userManager: UserManager = UserManager()
 	
+	mutating func getUsers() -> Users? {
+
+		userManager.getJSON {
+			self.users = UserStore.sharedUserStore.userStore
+		}
+		
+		return users
+	}
 }
